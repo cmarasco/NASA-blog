@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body onload='run(); init(); running=true;'>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Welcome</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_wk1()" style="font-size: 18px">Week 1</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 160px; margin-right: 160px; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-top: 16px">Welcome!</h2>
+            <img src="nasa_corin.jpg" style="float: right; border-radius: 30px; max-width:35%; max-height:35%; padding: 16px"></img>
+            <p style="font-size: 17px; padding-top: 16px; padding-left: 16px">
+                Hi! My name is Corin Marasco, and this summer, I'm interning with NASA Goddard's Astrophysics Science
+                Division as an OSTEM intern! I've always dreamed of working at NASA someday, and I'm so excited to be
+                fulfilling that dream through this internship.
+            </p>
+            <h2 class="center-col bolded" style="font-size: 24px; padding-top: 16px">The Project</h2>
+            <p style="font-size: 17px; padding-top: 8px; padding-left: 16px">
+                This summer, I will be working on cross-calibrating different X-ray satellites using the quasar 3C273.
+                I will be analyzing data from four major X-ray observatories: NuSTAR, XMM-Newton, Chandra, and Swift.
+                Data about the quasar that was collected by those four telescopes will be analyzed and compared in
+                order to find cross-normalization constants. Those constants can then be used for astronomers and
+                astrophysicists to normalize observational data from those telescopes.
+            </p>
+            <h2 class="center-col bolded" style="clear:both; font-size: 24px; padding-top: 16px">About Me</h2>
+            <p style="font-size: 17px; padding-top: 8px; padding-left: 16px;">
+                I am a fourth-year physics major at Georgia Tech with a strong interest in astrophysics. I have worked
+                on two major research projects, with the first focused on looking for ultrafast outflows from AGN,
+                and the second on analyzing characteristics of yellow supergiants. This is my first time working on a
+                project that involves fitting telescope data and analyzing it in detail, so I'm excited to learn more
+                about that process! Outside of research, I enjoy martial arts, reading, and hanging out with my dog.
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+             location.href = "index.html";
+            }
+            function to_wk1() {
+             location.href = "wk1.html";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+header {
+    text-align: center;
+    background-color: #a8dadc;
+    /* background-color: #76A5BC; */
+    height: 100px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 25px;
+}
+
+.heading > div {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: #B48E7E; */
+    background-color: #e63946;
+    text-align: center;
+}
+
+body {
+    background-color: #fdfffc;
+}
+
+ footer {
+     width: 100%;
+     background-color: black;
+     padding: 30px;
+ }
+
+strong {
+    font-weight: normal;
+}
+i {
+    color: gray;
+    visibility: hidden;
+}
+
+.canvasHolder {
+    margin: 20px;
+    margin-right: 60px;
+    margin-top: 60px;
+    position: relative;
+    height: 650px;
+    width: 650px;
+}
+.canvas {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.canvasHolderImage {
+    margin-right: 70px;
+    margin-top: 20px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+
+.planet-holder {
+    margin: auto;
+    margin-top: 40px;
+}
+
+.planet-calc {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    width: 630px;
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    clear: both;
+}
+
+.sub-holder {
+    width: 350px;
+}
+
+.planet {
+    width: 500px;
+}
+
+.info > .holder, .sub-holder, .planet > p, h4 {
+    text-align: center;
+    margin: 3px;
+}
+.small {
+    font-size: 10px;
+}
+
+.planet-calc > p {
+    margin: 5px;
+}
+p > input {
+    width: 100px;
+}
+
+/* .holder {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #FFFFFFDF;
+    /* background-color: #fff1e6; */
+    padding: 20px;
+} */
+.canvasSettings {
+    width: 400px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+#response {
+    width: 600px;
+    font-size: 14px;
+}
+.response-top {
+    width: 600px;
+}
+.response-holder {
+    width: 680px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#clicktoaddplanet {
+    width: 400px;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.buttons {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.expand {
+    height: 0px;
+    line-height: 0px;
+    font-size: 14px;
+    opacity: 0;
+    margin: 0px;
+}
+.expand > p > strong {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.center-col {
+    text-align: center;
+}
+
+.bolded {
+    font-weight: bold;
+}

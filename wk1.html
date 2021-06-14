@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body onload='run(); init(); running=true;'>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_wk1()" style="font-size: 18px">Week 1</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 160px; margin-right: 160px; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 1</h2>
+            <p style="font-size: 17px">
+                This week was mostly getting software set up, reading papers, and going to orientations. I met my
+                mentor for the first time on Monday and learned more about the project and got my reading assignments.
+                Then I finally got my laptop on Tuesday! I called the service desk to get it set up and got access to
+                my email. I spent the rest of the week working with the service desk and my mentor to install HEASoft,
+                which is a collection of software packages that are meant to analyze X-ray data. Specifically, I will
+                be using Xspec, which is an X-ray spectral fitting package.<br>
+                <div style="padding-top: 6px; padding-bottom: 16px">
+                    <img src="heasoft_home.png" style="display: block; margin-left: auto; margin-right: auto; border-radius: 10px; max-width:48%; max-height: 48%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; padding-bottom: 12px">
+                    <a href="https://heasarc.gsfc.nasa.gov/docs/software/heasoft/">The homepage for HEASoft
+                    </a></p>
+                The orientations were exciting as well. I learned about the astrophysics research being done at
+                Goddard, found out more about CRESST II (the collaborative organization between NASA Goddard and
+                various universities which hired me), and even heard from center directors and astronauts Bill Nelson
+                and Don Pettit. I also joined the NuSTAR group at Caltech, which is an organization of scientists also
+                working on NuSTAR data. All the other students in the group are working through the SURF program, so
+                I’m super excited to be working with such brilliant people!<br><br>
+                <div style="padding-left:160px; padding-right:160px; padding-bottom: 16px">
+                    <img src="goddard_orientation.jpg" style="border-radius: 10px; max-width:48%; max-height: 48%"></img>
+                    <img src="660_orientation.jpg" style="float: right; border-radius: 10px; max-width:48%; max-height:48%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; padding-bottom: 12px">Going to orientations!</p>
+            </p>
+            <p style="font-size: 17px">
+                Lastly, I’ve been participating in a Discord that the NASA Goddard students created. It’s been so fun
+                getting to know everyone, and they’re all some of the nicest and most dedicated people I’ve met! It’s
+                also great to meet so many people that all have similar research interests to me and who just love
+                NASA and space as much as I do. I’m excited for next week when I can hopefully really start doing
+                research!<br>
+                <div style="padding-top: 6px; padding-bottom: 16px">
+                    <img src="star_wars.jpg" style="display: block; margin-left: auto; margin-right: auto; border-radius: 10px; max-width:48%; max-height: 48%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px;">
+                    Meme from the Discord of astronaut Don Pettit showing how the urine<br>collection tubes used
+                    on the ISS can also be used as lightsabers.
+                </p>
+            </p>
+        </div>
+        <footer></footer>
+
+
+        <script type="text/javascript">
+            function to_home() {
+             location.href = "index.html";
+            }
+            function to_wk1() {
+             location.href = "wk1.html";
+            }
+        </script>
+    </body>
+</html>
