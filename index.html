@@ -6,7 +6,7 @@
         <title>My Summer as a NASA Intern</title>
         <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
     </head>
-    <body onload='run(); init(); running=true;'>
+    <body>
         <header>
             <h1>My Summer as a NASA Intern</h1>
         </header>
@@ -14,17 +14,20 @@
         <div class="container-fluid">
             <div class="row heading">
                 <div class="col-md col-sm-12">
-                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Welcome</button>
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
                 </div>
                 <div class="col-md col-sm-12">
-                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_wk1()" style="font-size: 18px">Week 1</button>
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Weeks &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 160px; margin-right: 160px; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
             <h2 class="center-col bolded" style="font-size: 34px; padding-top: 16px">Welcome!</h2>
-            <img src="nasa_corin.jpg" style="float: right; border-radius: 30px; max-width:35%; max-height:35%; padding: 16px"></img>
+            <img src="nasa_corin.jpg" class="corn" style="border-radius: 30px; padding: 16px"></img>
             <p style="font-size: 17px; padding-top: 16px; padding-left: 16px">
                 Hi! My name is Corin Marasco, and this summer, I'm interning with NASA Goddard's Astrophysics Science
                 Division as an OSTEM intern! I've always dreamed of working at NASA someday, and I'm so excited to be
@@ -51,10 +54,27 @@
 
         <script type="text/javascript">
             function to_home() {
-             location.href = "index.html";
+                location.href = "index.html";
             }
-            function to_wk1() {
-             location.href = "wk1.html";
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
             }
         </script>
     </body>
