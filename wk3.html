@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                        <a href="wk2.html">Week 2</a>
+                        <a href="wk3.html">Week 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 3</h2>
+            <p style="font-size: 17px">
+                Now that my computer is set up, I was able to start collecting data for the cross-calibration analysis this week!
+                Each year, all four X-ray telescopes that we will be cross-calibrating observe 3C273 on the same day. For our comparisons,
+                we needed to collect those yearly observations of 3C273 from each of the four telescopes from the years 2015-2020.
+                I found and downloaded all necessary files to analyze each observation and organized them into a readable directory
+                tree.<br><br>
+
+                Each observation has a file with a .fits extension detailing good time intervals, or GTIs, which are times during the
+                observation when usable information was collected. For our analysis, we need to find when the GTIs for each telescope
+                overlap so that we can compare data taken simultaneously. To visualize this, I created plots for each year showing
+                the GTIs of the four observations we will compare!<br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="gti_fig.png" style="display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    GTIs in 2015 for each of the four telescopes used in the cross-calibration analysis.
+                </p>
+
+                Lastly, I had to create my own .fits files containing the start and stop times of the GTI overlaps, so that they could be
+                inputted into a program for further analysis. Because all four GTIs don’t overlap for very long, we only compare two
+                telescopes at a time. Therefore, I needed to create a .fits file containing the start and stop times for the overlap
+                between the NuSTAR and Swift GTIs, then the NuSTAR and Chandra GTIs, then the NuSTAR and XMM-Newton GTIs, and so on
+                for each year. This and the GTI plots were done using Python and the Astropy package.<br><br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="fits_pic.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    Example of a .fits file showing the start and stop times of the overlap between the NuSTAR and Swift observations in 2015.
+                    Start and stop times are given in NuSTAR time, which is seconds since Jan. 1st 2010 at 00:00.
+                </p>
+
+                I loved getting to do so much coding in Python this week and learning more about Astropy! I’m really excited to continue
+                programming and creating more figures throughout the summer!
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+                location.href = "index.html";
+            }
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

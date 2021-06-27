@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                        <a href="wk2.html">Week 2</a>
+                        <a href="wk3.html">Week 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 2</h2>
+            <p style="font-size: 17px">
+                This week, I finally finished setting up my computer! I got all the software downloaded and installed
+                so that HEASoft could run properly, and I was able to begin looking at data. To make sure that all that
+                software worked, I walked through the
+                <a href="https://heasarc.gsfc.nasa.gov/docs/nustar/analysis/nustar_quickstart_guide.pdf" target="_blank">NuSTAR quickstart guide</a>,
+                which explains how to analyze data from the NuSTAR telescope using a 2012 observation of 3C273 as an example. I got
+                to play around with the images that the software produced, and it ended up making some pretty awesome figures!<br>
+                <div style="display: block; margin-left: auto; margin-right: auto; padding-top: 16px; padding-bottom: 16px">
+                    <img src="nu10012001002A01_im.jpg" style="border-radius: 10px; max-width:48%; max-height: 48%"></img>
+                    <img src="nu10012001002A01_lc.jpg" style="float: right; border-radius: 10px; max-width:48%; max-height:48%"></img>
+                </div>
+                <div style="display: block; margin-left: auto; margin-right: auto; padding-top: 16px; padding-bottom: 16px">
+                    <img src="nu10012001002A01_ph.jpg" style="border-radius: 10px; max-width:48%; max-height: 48%"></img>
+                    <img src="ds9_image.png" style="float: right; border-radius: 10px; max-width:42%; max-height:42%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    Figures produced through NuSTAR data analysis: Top left - Sky image; Top right - Source light curve (gap is where NuSTAR
+                    orbits behind Earth); Bottom left - Source energy spectrum; Bottom right - Event image (locations of X-ray events).
+                </p>
+
+                After I was finished with the quickstart guide, my mentor walked me through fitting a model to the energy curve
+                that the data produced using XSPEC. It involved a lot of statistical analysis that I don’t fully understand, but
+                I’m excited to learn more about that throughout the summer!<br><br>
+                <div style="padding-bottom: 6px">
+                    <img src="data_reduction.png" style="display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; padding-bottom: 12px">Fitted model to the source's energy spectrum.</p>
+            </p>
+            <p style="font-size: 17px">
+                Outside of work, I also attended some discussions/activities and began meeting other scientists at NASA. Right now,
+                there’s lots of activities for pride month, and it’s been amazing to see that there are so many other queer people
+                working at NASA! Everyone that I’ve talked to so far has been incredibly nice and I love learning more about the
+                amazing research that everyone’s working on. I didn’t expect the culture at NASA to be focused on diversity and
+                inclusion much at all, but I’m glad that so many people there are accepting and working to make the field better
+                for everyone!
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+                location.href = "index.html";
+            }
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
