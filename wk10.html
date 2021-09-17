@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                        <a href="wk2.html">Week 2</a>
+                        <a href="wk3.html">Week 3</a>
+                        <a href="wk4.html">Week 4</a>
+                        <a href="wk5.html">Week 5</a>
+                        <a href="wk6.html">Week 6</a>
+                        <a href="wk7.html">Week 7</a>
+                        <a href="wk8.html">Week 8</a>
+                        <a href="wk9.html">Week 9</a>
+                        <a href="wk10.html">Week 10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 10</h2>
+            <p style="font-size: 17px">
+                This week started out with a presentation at NASA’s conference for summer interns. I modified my presentation
+                from Friday and got to present my research to my coworkers, family, and friends! It was so cool to finally
+                show off the work that I’ve been doing this summer! Since it was mostly a repeat of my presentation on Friday,
+                I didn’t have to go through as much rigorous preparation, which was nice.<br><br>
+
+                After my presentation, I tried one last time to fix the Swift data. I had messed up the extractions by
+                choosing a bad source and background region, so I redid the extractions from every year after choosing new
+                regions. Unfortunately, it didn’t seem to do much, so we need to reach out to the Swift experts again and
+                ask them to help us with the extractions.<br><br>
+
+                After I had finished my last attempt at the Swift extractions, I had to prepare to return my computer.
+                It took me a while to get all my data off the laptop because it wouldn’t copy to my flash drive very
+                quickly at all (it ended up taking almost 24 hours!). Once I had my data and Jupyter notebooks saved and
+                safely stored on my personal laptop, I had to shut down my NASA computer one last time.<br><br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="mac.jpg" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:50%; max-height:50%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    Goodbye computer :(
+                </p>
+
+                Fortunately, my mentor is letting me continue with my project into the fall! We’re going to work on
+                cleaning up the Swift data, including the NICER telescope in our cross-calibration analysis, and
+                writing a paper including all this data. I’m really looking forward to continuing to work with my
+                mentor and this amazing project into the fall!<br><br>
+
+                I also got invited to continue participating in Goddard’s LGBT advisory committee social hours, which
+                I’m very excited about! The people in the LGBT AC were some of the nicest people that I met at NASA,
+                and I’m so glad that I have a way to keep in touch with them!<br><br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="nasa_pride.jpg" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:35%; max-height:35%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    NASA pride!
+                </p>
+
+                I’m happy that between my connections with people that I met at NASA and the research that I’m continuing
+                with, I get to feel like I’m still a part of the NASA community! I’m looking forward to hopefully getting
+                another internship with Goddard next summer and maybe getting to work on campus!<br><br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="nasa_meatball.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:80%; max-height:80%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    Thank you so much for reading :)
+                </p>
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+                location.href = "index.html";
+            }
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

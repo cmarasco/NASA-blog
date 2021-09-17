@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                        <a href="wk2.html">Week 2</a>
+                        <a href="wk3.html">Week 3</a>
+                        <a href="wk4.html">Week 4</a>
+                        <a href="wk5.html">Week 5</a>
+                        <a href="wk6.html">Week 6</a>
+                        <a href="wk7.html">Week 7</a>
+                        <a href="wk8.html">Week 8</a>
+                        <a href="wk9.html">Week 9</a>
+                        <a href="wk10.html">Week 10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 9</h2>
+            <p style="font-size: 17px">
+                This week, I spent most of my time working on my presentation! I was scheduled to present at a meeting with the NuSTAR
+                group, which consists of a few dozen students and professors from Caltech, so I really wanted to do well! Because I
+                did not do well presenting at my meeting last week, my mentor helped me plan out all of my talking points and better
+                organize my slides, which was really helpful. Once I knew what I had to change, I redid my slides to focus on the NuSTAR
+                data, added new plots and cleaned up the old ones, and wrote a better script for the presentation.<br><br>
+
+                Because I put so much more effort into my presentation this time, it went really well! I was so proud to present my
+                work comprehensively and in a way that actually made sense and to have that work praised by such accomplished scientists.
+                The final presentation is posted in the project tab!<br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="title_slide.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    The title slide from my presentation!
+                </p>
+
+                Besides my presentation, I also did some final wrap-up meetings with my CRESST supervisors. I did an exit interview,
+                where I talked about how much I enjoyed being a part of the NASA team over the summer and how I thought the program could
+                improve. I also got to reflect on all the events that I had participated in throughout the summer, which was fun to look
+                back on!<br><br>
+
+                I also had a follow-up meeting with a professor from the graduate school panel that I attended a few weeks ago. It went really well, and
+                I got so much great advice about how to move forward in my career! I’ve never heard a scientist talk so openly about their life
+                experiences, so it’s been so helpful to know what I’m getting into and how to best prepare for my future!
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+                location.href = "index.html";
+            }
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

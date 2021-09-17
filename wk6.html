@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet_nasa.css">
+        <title>My Summer as a NASA Intern</title>
+        <meta name="google-site-verification" content="uiGHq8orU4v2p60qZF5TR7GhXXtN_ks-YNorCzOqpFI" />
+    </head>
+    <body>
+        <header>
+            <h1>My Summer as a NASA Intern</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row heading">
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block" onclick="to_home()" style="font-size: 18px">Introduction</button>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="wk1.html">Week 1</a>
+                        <a href="wk2.html">Week 2</a>
+                        <a href="wk3.html">Week 3</a>
+                        <a href="wk4.html">Week 4</a>
+                        <a href="wk5.html">Week 5</a>
+                        <a href="wk6.html">Week 6</a>
+                        <a href="wk7.html">Week 7</a>
+                        <a href="wk8.html">Week 8</a>
+                        <a href="wk9.html">Week 9</a>
+                        <a href="wk10.html">Week 10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+            <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 6</h2>
+            <p style="font-size: 17px">
+                Since we didn’t get the extracted data last week for those three telescopes, I began working on extracting that data
+                myself. Our plan is for me to do Swift and Chandra while we wait for the XMM-Newton data to come in!</br></br>
+
+                Each telescope has a different set of tools for data reduction, so it takes quite a bit of research and reading to
+                find how to extract all the necessary data for our project. The NuSTAR guide was the easiest to follow, and I found
+                that I had to do more tasks manually to extract Swift and Chandra data. For example, after extracting spectra from the
+                Swift data, XSPEC refused to plot it without a response file, which I realized that I had to create separately and
+                link to the spectra file, while NuSTAR did all that automatically. Chandra’s extractions were even more unique, since
+                it splits up its spectra files by grating (medium- and high-energy), which need to be plotted/analyzed differently,
+                and orders (-1 and +1), which need to be combined.<br>
+                <div style="padding-top: 6px; padding-bottom: 6px">
+                    <img src="chandra_files.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto">
+                    Files produced by the 2015 Chandra data extraction.
+                </p>
+
+                Once I had that data extracted, I was able to plot the light curves and contour plots next to each other and begin
+                visually comparing them, and it was cool to see all the data from different telescopes come together!<br>
+                <div style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 16px">
+                    <img src="2015_lc_all.png" style="border-radius: 10px; max-width:52%; max-height: 52%"></img>
+                    <img src="2015_nustar_swift_contour.png" style="float: right; border-radius: 10px; max-width:46%; max-height:46%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    The lightcurve on the left shows the collected data from each telescope and their multiple instruments over
+                    time (NuSTAR in red, XMM in black, Swift in blue, and Chandra in magenta). The contour plot figure on the
+                    right shows the overlap between the NuSTAR and Swift contour plots.
+                </p>
+
+                Outside of research, we had some great talks this week! Dr. Michelle Thaller is an accomplished scientist and
+                science communicator, and she gave a really engaging presentation on neutron stars. Later in the week, we also
+                had Dr. John Mather (who’s a Nobel prize winner!) talk to us about the James Webb Space Telescope and it’s long
+                road to the cosmos. I haven’t been to as many science talks as I had hoped to go to this summer, but I’m glad
+                I made it to those two—they were really inspiring!</br></br>
+                <div style="display: block; margin-left: 160px; margin-right:160px; padding-bottom: 16px">
+                    <img src="mather.jpg" style="border-radius: 10px; max-width:50%; max-height: 50%"></img>
+                    <img src="thaller.png" style="float: right; border-radius: 10px; max-width:35%; max-height:35%"></img>
+                </div>
+                <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto;
+                padding-bottom: 16px">
+                    Scientists John Mather (left) and Michelle Thaller (right).
+                </p>
+            </p>
+        </div>
+        <footer></footer>
+
+        <script type="text/javascript">
+            function to_home() {
+                location.href = "index.html";
+            }
+
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function weeks() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
