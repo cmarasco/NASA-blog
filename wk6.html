@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md col-sm-12">
                     <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="weeks()" style="font-size: 18px">Blog &nbsp▼</button>
-                    <div id="myDropdown" class="dropdown-content">
+                    <div id="myDropdown" class="dropdown-content weekslist">
                         <a href="wk1.html">Week 1</a>
                         <a href="wk2.html">Week 2</a>
                         <a href="wk3.html">Week 3</a>
@@ -29,6 +29,13 @@
                         <a href="wk8.html">Week 8</a>
                         <a href="wk9.html">Week 9</a>
                         <a href="wk10.html">Week 10</a>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <button type="button" class="btn btn-outline-light btn-block dropbtn" onclick="pres()" style="font-size: 18px">Presentations &nbsp▼</button>
+                    <div id="presDropdown" class="dropdown-content preslist">
+                        <a href="nasa.html">NASA</a>
+                        <a href="nustar.html">NuSTAR</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +99,26 @@
             /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
             function weeks() {
+                var dropdowns = document.getElementsByClassName("preslist");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
                 document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function pres() {
+                var dropdowns = document.getElementsByClassName("weekslist");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+                document.getElementById("presDropdown").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
