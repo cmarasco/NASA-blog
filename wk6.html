@@ -41,11 +41,11 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 6</h2>
             <p style="font-size: 17px">
                 Since we didn’t get the extracted data last week for those three telescopes, I began working on extracting that data
-                myself. Our plan is for me to do Swift and Chandra while we wait for the XMM-Newton data to come in!</br></br>
+                myself. Our plan is for me to do Swift and Chandra while we wait for the XMM-Newton data to come in!<br><br>
 
                 Each telescope has a different set of tools for data reduction, so it takes quite a bit of research and reading to
                 find how to extract all the necessary data for our project. The NuSTAR guide was the easiest to follow, and I found
@@ -55,14 +55,14 @@
                 it splits up its spectra files by grating (medium- and high-energy), which need to be plotted/analyzed differently,
                 and orders (-1 and +1), which need to be combined.<br>
                 <div style="padding-top: 6px; padding-bottom: 6px">
-                    <img src="chandra_files.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
+                    <img src="chandra_files.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:60%; max-height: 60%"></img>
                 </div>
                 <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto">
                     Files produced by the 2015 Chandra data extraction.
                 </p>
 
                 Once I had that data extracted, I was able to plot the light curves and contour plots next to each other and begin
-                visually comparing them, and it was cool to see all the data from different telescopes come together!<br>
+                visually comparing them. It was cool to see all the data from different telescopes come together!<br>
                 <div style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 16px">
                     <img src="2015_lc_all.png" style="border-radius: 10px; max-width:52%; max-height: 52%"></img>
                     <img src="2015_nustar_swift_contour.png" style="float: right; border-radius: 10px; max-width:46%; max-height:46%"></img>
@@ -78,7 +78,7 @@
                 science communicator, and she gave a really engaging presentation on neutron stars. Later in the week, we also
                 had Dr. John Mather (who’s a Nobel prize winner!) talk to us about the James Webb Space Telescope and it’s long
                 road to the cosmos. I haven’t been to as many science talks as I had hoped to go to this summer, but I’m glad
-                I made it to those two—they were really inspiring!</br></br>
+                I made it to those two—they were really inspiring!<br><br>
                 <div style="display: block; margin-left: 160px; margin-right:160px; padding-bottom: 16px">
                     <img src="mather.jpg" style="border-radius: 10px; max-width:50%; max-height: 50%"></img>
                     <img src="thaller.png" style="float: right; border-radius: 10px; max-width:35%; max-height:35%"></img>
@@ -88,12 +88,23 @@
                     Scientists John Mather (left) and Michelle Thaller (right).
                 </p>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk5.html";
+            }
+            function next() {
+                location.href = "wk7.html";
             }
 
             /* When the user clicks on the button,

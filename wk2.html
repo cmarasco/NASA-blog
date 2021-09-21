@@ -41,14 +41,14 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 2</h2>
             <p style="font-size: 17px">
                 This week, I finally finished setting up my computer! I got all the software downloaded and installed
                 so that HEASoft could run properly, and I was able to begin looking at data. To make sure that all that
                 software worked, I walked through the
                 <a href="https://heasarc.gsfc.nasa.gov/docs/nustar/analysis/nustar_quickstart_guide.pdf" target="_blank">NuSTAR quickstart guide</a>,
-                which explains how to analyze data from the NuSTAR telescope using a 2012 observation of 3C273 as an example. I got
+                which explains how to analyze data from the NuSTAR telescope using a 2012 observation of 3C 273 as an example. I got
                 to play around with the images that the software produced, and it ended up making some pretty awesome figures!<br>
                 <div style="display: block; margin-left: auto; margin-right: auto; padding-top: 16px; padding-bottom: 16px">
                     <img src="nu10012001002A01_im.jpg" style="border-radius: 10px; max-width:48%; max-height: 48%"></img>
@@ -78,14 +78,25 @@
                 working at NASA! Everyone that I’ve talked to so far has been incredibly nice and I love learning more about the
                 amazing research that everyone’s working on. I didn’t expect the culture at NASA to be focused on diversity and
                 inclusion much at all, but I’m glad that so many people there are accepting and working to make the field better
-                for everyone!
+                for everyone!<br><br>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk1.html";
+            }
+            function next() {
+                location.href = "wk3.html";
             }
 
             /* When the user clicks on the button,

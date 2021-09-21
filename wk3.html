@@ -41,12 +41,12 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 3</h2>
             <p style="font-size: 17px">
                 Now that my computer is set up, I was able to start collecting data for the cross-calibration analysis this week!
-                Each year, all four X-ray telescopes that we will be cross-calibrating observe 3C273 on the same day. For our comparisons,
-                we needed to collect those yearly observations of 3C273 from each of the four telescopes from the years 2015-2020.
+                Each year, all four X-ray telescopes that we will be cross-calibrating observe 3C 273 on the same day. For our comparisons,
+                we needed to collect those yearly observations of 3C 273 from each of the four telescopes from the years 2015-2020.
                 I found and downloaded all necessary files to analyze each observation and organized them into a readable directory
                 tree.<br><br>
 
@@ -77,14 +77,25 @@
                 </p>
 
                 I loved getting to do so much coding in Python this week and learning more about Astropy! I’m really excited to continue
-                programming and creating more figures throughout the summer!
+                programming and creating more figures throughout the summer!<br><br>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk2.html";
+            }
+            function next() {
+                location.href = "wk4.html";
             }
 
             /* When the user clicks on the button,

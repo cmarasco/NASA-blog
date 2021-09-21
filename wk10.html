@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 10</h2>
             <p style="font-size: 17px">
                 This week started out with a presentation at NASA’s conference for summer interns. I modified my presentation
@@ -93,12 +93,20 @@
                     Thank you so much for reading :)
                 </p>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right" disabled>Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk9.html";
             }
 
             /* When the user clicks on the button,

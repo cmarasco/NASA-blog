@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 5</h2>
             <p style="font-size: 17px">
                 We were still waiting on the extracted telescope data from Swift, Chandra, and XMM-Newton to come in this week, so it’s
@@ -79,14 +79,25 @@
                 much about stellar astronomy, what it’s like to have a career in astronomy, and, of course, graduate school! She was
                 incredibly nice, and it was amazing to hear more about similar research to what I hope to work on in the future!<br><br>
 
-                On a sadder note, we didn’t get the extracted data this week, so that’s what I’ll be working on next week! Stay tuned...
+                On a sadder note, we didn’t get the extracted data this week, so that’s what I’ll be working on next week! Stay tuned...<br><br>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk4.html";
+            }
+            function next() {
+                location.href = "wk6.html";
             }
 
             /* When the user clicks on the button,

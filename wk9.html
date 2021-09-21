@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 9</h2>
             <p style="font-size: 17px">
                 This week, I spent most of my time working on my presentation! I was scheduled to present at a meeting with the NuSTAR
@@ -70,12 +70,23 @@
                 I got so much great advice about how to move forward in my career! I’ve never heard a scientist talk so openly about their life
                 experiences, so it’s been so helpful to know what I’m getting into and how to best prepare for my future!
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk8.html";
+            }
+            function next() {
+                location.href = "wk10.html";
             }
 
             /* When the user clicks on the button,

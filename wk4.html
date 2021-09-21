@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 4</h2>
             <p style="font-size: 17px">
                 We started extracting the telescope data this week, which has been really cool! First, we had to send the GTI files
@@ -54,8 +54,8 @@
                 week using the GTI files to extract lightcurves from the NuSTAR data. My mentor also showed me (again but in more
                 detail) how to fit a model to the NuSTAR data using XSPEC and how to save that data so it can be recreated in Python.
                 She also showed me how to create confidence contour plots from the lightcurve data to find a relationship between the
-                photon index and flux in the NuSTAR observations of the quasar 2C372. I also learned how to save the contour plots and
-                recreate them in Python.<br>
+                photon index and flux in the NuSTAR observations of the quasar 3C 273. I also learned how to save the contour plots so
+                that I can later recreate them in Python.<br>
                 <div style="padding-top: 6px; padding-bottom: 6px">
                     <img src="nustar_2017_lc.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
                 </div>
@@ -74,12 +74,23 @@
                 I spent most of this week experimenting more with XSPEC and NuSTAR data analysis, so I don’t have as many new plots, but
                 next week, we should finish the NuSTAR plots and analysis and be ready to compare it with the other telescopes!<br><br>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk3.html";
+            }
+            function next() {
+                location.href = "wk5.html";
             }
 
             /* When the user clicks on the button,

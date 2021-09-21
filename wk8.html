@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 8</h2>
             <p style="font-size: 17px">
                 This week, I finished the last step of the cross-calibration analysis, which was finding cross-normalization
@@ -53,13 +53,13 @@
                     <img src="cross-norm_consts.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:90%; max-height: 90%"></img>
                 </div>
                 <p class="font-italic text-center" style="font-size: 15px; width: 72%; display: block; margin-left: auto; margin-right: auto">
-                    The cross normalization constants for 2015 between NuSTAR and the other instruments.
+                    The cross normalization constants for 2015 between NuSTAR and the other instruments.<br>
                 </p>
 
                 While I was finishing up, my mentor and I noticed that the Swift data seemed very off. It was not following
                 the expected trends very well, and it would measure vastly different fluxes for 3C 273 when compared to the
                 other observatories. I tried to correct the Swift data by selecting different source and background regions for
-                its extraction, but it did not seem to fix the glaring inconsistencies in the data.<br>
+                its extraction, but it did not seem to fix the glaring inconsistencies in the data.
                 <div style="padding-top: 6px; padding-bottom: 6px">
                     <img src="2016_nustar_swift_contour.png" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; max-width:70%; max-height: 70%"></img>
                 </div>
@@ -73,12 +73,23 @@
                 for so long, I didn’t give myself enough time to prepare the presentation, and I kind of bombed it. Next week,
                 I will be presenting again at a different event, so I’m hoping to do much better then!
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk7.html";
+            }
+            function next() {
+                location.href = "wk9.html";
             }
 
             /* When the user clicks on the button,

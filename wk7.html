@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%; margin-bottom: 100px">
+        <div style="clear: both; margin: 30px; margin-left: 18%; margin-right: 18%">
             <h2 class="center-col bolded" style="font-size: 34px; padding-bottom: 16px; padding-top: 16px">Week 7</h2>
             <p style="font-size: 17px">
                 This week was a busy one! I had finished extracting all the NuSTAR, Swift, and Chandra data, and we received all the
@@ -71,7 +71,7 @@
                 talk to him about grad school and his research. His is a leading expert in observational cosmology, which
                 I’m interested in but don’t know much about, so it was great to learn more about it from an expert!<br><br>
 
-                I also went to a graduate school event, where physics and astrophysics professors from different universities
+                I also went to a graduate school event where physics and astrophysics professors from different universities
                 came to talk on a panel about graduate school application advice. It was incredibly helpful because, after
                 the session, we got to speak with the panel members in breakout rooms, and I really connected with one of
                 the professors I met with! Along with my research, the best part of this internship has definitely been
@@ -83,12 +83,23 @@
                     Flyer for the graduate school panel.
                 </p>
             </p>
+            <div style="margin: auto">
+                <button type="button" class="btn btn-outline-dark" onclick="prev()" style="font-size: 16px">&#8592; Previous</button>
+                <button type="button" class="btn btn-outline-dark" onclick="next()" style="font-size: 16px; float: right">Next &#8594;</button>
+            </div>
         </div>
+
         <footer></footer>
 
         <script type="text/javascript">
             function to_home() {
                 location.href = "index.html";
+            }
+            function prev() {
+                location.href = "wk6.html";
+            }
+            function next() {
+                location.href = "wk8.html";
             }
 
             /* When the user clicks on the button,
